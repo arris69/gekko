@@ -33,7 +33,7 @@ const mode = util.gekkoMode();
 const connectionString = config.postgresql.connectionString;
 
 const checkClient = new pg.Pool({
-  connectionString: connectionString + '/postgres',
+  connectionString: connectionString,
 });
 const pool = new pg.Pool({
   connectionString: connectionString + '/' + dbName,
